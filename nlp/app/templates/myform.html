@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <b>A sample form.</b>
+    <form action="" method="post" novalidate>
+        <p>
+            {{ form.input_field.label }} {{ form.input_field(size=32) }}
+        </p>
+        {{ form.submit() }}
+    </form>
+{% endblock %}

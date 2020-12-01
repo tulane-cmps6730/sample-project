@@ -1,0 +1,30 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - nlp</title>
+      {% else %}
+      <title>nlp</title>
+      {% endif %}
+      <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <div>my nlp project</div>
+        <hr>
+        {% if form.errors %}
+        {{ form.errors }}
+        {% endif %}
+        
+        {% block content %}{% endblock %}
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        <br>
+    </body>
+</html>
