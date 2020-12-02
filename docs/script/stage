@@ -35,7 +35,7 @@ cd _site && git init && git remote add staging https://ghe.io/${account}/${repo}
 # Push the new `_site` temporary repo to our remote staging repo, then remove
 # the remote again to do it all over again afterwards.
 printf "\n${grn}# Publishing...\n--------------------------------------------------${end}\n"
-git push staging master:gh-pages --force && git remote rm staging
+git push staging main:gh-pages --force && git remote rm staging
 
 # Celebrate and open the staging site
 printf "\n${grn}# Success!${end}\n"
