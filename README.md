@@ -22,9 +22,9 @@ https://github.com/tulane-cmps6730/project-alpha
 
 ### Contents
 
-- [slides](slides): template to create slides for project presentations
-- [notebooks](notebooks): Jupyter notebooks for project development
+- [docs](docs): template to create slides for project presentations
 - [nlp](nlp): Python project code
+- [notebooks](notebooks): Jupyter notebooks for project development
 - [report](report): LaTeX report
 - [tests](tests): unit tests for project code
 
