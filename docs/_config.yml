@@ -15,6 +15,7 @@ kramdown:
 
 plugins:
   - jemoji
+  - RevealMath
 
 ## personalize your slide show
 title:       github-slideshow
