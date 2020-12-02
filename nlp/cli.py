@@ -85,7 +85,7 @@ def do_cross_validation(clf, X, y):
         all_preds[test] = clf.predict(X[test])
     print(classification_report(y, all_preds))    
 
-def top_coef(clf, vec, labels=['liberal', 'conservative'], n=20):
+def top_coef(clf, vec, labels=['liberal', 'conservative'], n=10):
     feats = np.array(vec.get_feature_names())
     print('top coef for %s' % labels[1])
     for i in np.argsort(clf.coef_[0])[::-1][:n]:
