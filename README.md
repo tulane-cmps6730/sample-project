@@ -4,6 +4,8 @@ This repository contains starter code for the final project in CMPS 4730/6730: N
 
 The code in this repository will be copied into your team's project repository at the start of class to provide a starting point for your project.
 
+You should edit this file to include a summary of the goals, methods, and conclusions of your project.
+
 The structure of the code supports the following:
 
 - A simple web UI using Flask to support a demo of the project
