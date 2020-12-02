@@ -12,10 +12,12 @@ import os
 
 # ~/.nlp/nlp.cfg will contain configuration information for the project,
 # such as where data will be downloaded from.
+# here is an example.
 def write_default_config(path):
 	w = open(path, 'wt')
 	w.write('[data]\n')
-	w.write('data = https://www.dropbox.com/s/...')  # to be determined
+	w.write('url = https://www.dropbox.com/s/o0nxd8pnwy809u2/headlines.csv?dl=1\n')
+	w.write('file = %s%s%s\n' % (nlp_path, os.path.sep, 'headlines.csv'))
 	w.close()
 
 # Find NLP_HOME path

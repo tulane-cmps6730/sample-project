@@ -15,7 +15,11 @@
         {% endif %}
         
         {% block content %}{% endblock %}
-
+        {% if confidence %}
+        <p class="lead my-4" style="color: blue">
+           Prediction = {{ prediction }}  <br> Confidence = {{ confidence }}
+        </p>
+        {% endif %}
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         <ul>
