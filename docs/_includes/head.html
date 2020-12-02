@@ -13,6 +13,9 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 <!-- jQuery -->
 <script src="{{ site.baseurl }}/assets/js/jquery-1.11.1.min.js"></script>
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -25,6 +28,17 @@
 	}
 </script>
 
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
+  
 <!--[if lt IE 9]>
 <script src="{{ site.baseurl }}/reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
