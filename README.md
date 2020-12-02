@@ -15,6 +15,7 @@ The structure of the code supports the following:
 - At the start of the course, students will be divided into project teams. Each team will receive a copy of this starter code in a new repository. E.g.:
 https://github.com/tulane-cmps6730/project-alpha
 - Each team member will then clone their team repository to their personal computer to work on their project. E.g.: `git clone https://github.com/tulane-cmps6730/project-alpha`
+- See [GettingStarted.md](GettingStarted.md) for instructions on using the starter code.
 
 
 ### Contents
